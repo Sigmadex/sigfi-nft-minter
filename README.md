@@ -9,5 +9,11 @@ This application locks up SDEX or SDEX LP tokens for a user selected period of t
 APY NFTs can be used in conjunction with staking SDEX in other SigmaFi pools to earn rewards relative to their minted NFTs.
 
 **Eg.** John bought and staked 50,000 SDEX in the NFT Minter Contract for 365 days. The contract credits him 0.000015 per SDEX per day giving him an increase of 0.75% per day for 1 year (365 days). After his contract reaches maturity, he can mint an APY NFT for 273% and obtain all his staked SDEX he put up in order to mint his NFT. After John mints his NFT he has two options to capitalize on the opportunity:
-* He can sell the NFY for an instant profit
+* He can sell the NFT for an instant profit
 * He can stake SDEX to recieve 273% APY in rewards relative to his capital
+
+# Proposed Flow Diagram
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/33762147/170084813-5bd49f1b-aba4-427b-b4fd-3b410ac35883.png" style="width:560px;">
+</p>
