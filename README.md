@@ -13,12 +13,15 @@ APY NFTs can be used in conjunction with staking SDEX in other SigmaFi pools to 
 * He can stake SDEX to recieve 273% APY in rewards relative to his capital
 
 ## Proposed Variables
-
+<div align="center">
+  
 |multiplier|value|
 |-------------|--------|
 |SDEX daily   |0.000015|
 |SDEX LP daily|0.000050|
-
+  
+</div>
+  
 # Proposed Flow Diagram
 
 <p align="center">
