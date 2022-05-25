@@ -12,8 +12,10 @@ APY NFTs can be used in conjunction with staking SDEX in other SigmaFi pools to 
 * He can sell the NFT for an instant profit
 * He can stake SDEX to recieve 273% APY in rewards relative to his capital
 
-## Proposed Variables
-### Matured Contract
+## Proposed Genesis Parameters
+Variables should be set by contract deployer.
+
+### Reward Variables
 <div align="center">
   
 |desc|value|var|
@@ -23,7 +25,7 @@ APY NFTs can be used in conjunction with staking SDEX in other SigmaFi pools to 
   
 </div>
 
-### Non Matured Contract
+### Penalty Variables
 <div align="center">
   
 |penalty|value|var|
