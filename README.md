@@ -13,14 +13,14 @@ APY NFTs can be used in conjunction with staking SDEX in other SigmaFi pools to 
 * He can stake SDEX to recieve 273% APY in rewards relative to his capital
 
 ## Proposed Genesis Parameters
-Variables should be set by contract deployer.
+Variables for both rewards and penalties will be set by the contract deployer only and can be modified by the deployer at anytime.
 
 ### Reward Variables
 <div align="center">
   
 |desc|value|var|
-|-------------|--------|---------|
-|SDEX daily   |0.000015|`sdexAPY`|
+|-------------|--------|-----------|
+|SDEX daily   |0.000015|`sdexAPY`  |
 |SDEX LP daily|0.000050|`sdexlpAPY`|
   
 </div>
@@ -29,13 +29,13 @@ Variables should be set by contract deployer.
 <div align="center">
   
 |penalty|value|var|
-|-------------|--------|---------|
-|SDEX daily   |50%|`sdexPenalty` |
-|SDEX LP daily|30%|`sdexlpPenalty`|
+|-------------|--------|----------|
+|SDEX daily   |50%|`sdexPenalty`  |
+|SDEX LP daily|50%|`sdexlpPenalty`|
   
 </div>
   
 ## Proposed Flow Diagram
 <p align="center">
-<img src="https://user-images.githubusercontent.com/33762147/170084813-5bd49f1b-aba4-427b-b4fd-3b410ac35883.png" style="width:560px;">
+<img src="https://user-images.githubusercontent.com/33762147/170386375-8f26cc01-7c99-414c-b578-af8d90d4b70b.png" style="width:560px;">
 </p>
