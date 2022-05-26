@@ -55,7 +55,22 @@ Penalties are an ecosystem balancing mechanism.
 |0x82C879fdBd65aD36f8Fccc...|50000|0.17|55469846561|83469846588|0|
   
 </div>
-  
+
+### Storage Variables
+
+<div align="center">
+    
+|query|type|desc|
+|-----|----|----|
+|wallet|*address*|Address of wallet which staked tokens|
+|staked|*uint256*|# of tokens which are held in the smart contract for this specific `wallet`|
+|minedAPY|*uint256*|Current NFT value, updated once per day|
+|startTimestamp|*uint256*|Time of when the position was opened|
+|endTimestamp|*uint256*|Time of when the position will mature|
+|isLiquidity|*bool*|Identifies whether the deposit is an LP token or SDEX|
+
+</div>
+    
 ## Proposed Flow Diagram
 <p align="center">
 <img src="https://user-images.githubusercontent.com/33762147/170386375-8f26cc01-7c99-414c-b578-af8d90d4b70b.png" style="width:560px;">
