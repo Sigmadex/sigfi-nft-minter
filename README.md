@@ -16,6 +16,7 @@ APY NFTs can be used in conjunction with staking SDEX in other SigmaFi pools to 
 Variables for both rewards and penalties will be set by the contract deployer only and can be modified by the deployer at anytime.
 
 ### Reward Variables
+When commitments are respected, rewards are given for loyalty.
 <div align="center">
   
 |desc|value|var|
@@ -26,12 +27,13 @@ Variables for both rewards and penalties will be set by the contract deployer on
 </div>
 
 ### Penalty Variables
+Penalties are an ecosystem balancing mechanism.
 <div align="center">
   
-|penalty|value|var|
-|-------------|--------|----------|
-|SDEX daily   |50%|`sdexPenalty`  |
-|SDEX LP daily|50%|`sdexlpPenalty`|
+|penalty|value|var|desc|
+|-------------|--------|----------|-----------|
+|SDEX daily   |50%|`sdexPenalty`  |SDEX burned|
+|SDEX LP daily|50%|`sdexlpPenalty`|LP tokens forfeited|
   
 </div>
   
