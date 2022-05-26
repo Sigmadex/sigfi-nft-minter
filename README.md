@@ -32,10 +32,17 @@ Penalties are an ecosystem balancing mechanism.
   
 |penalty|value|var|desc|
 |-------------|--------|----------|-----------|
-|SDEX daily   |50%|`sdexPenalty`  |SDEX burned|
+|SDEX daily   |50%|`sdexPenalty`  |SDEX burn pool|
 |SDEX LP daily|50%|`sdexlpPenalty`|LP tokens forfeited|
   
 </div>
+  
+## Example Scenario
+
+1. User uses react front-end to timelock and deposit SDEX into minter contract data is stored in an array
+2. As time elapses the daily NFT rate is derived from multiplying the amount of SDEX staked by `sdexAPY`
+3. A sufficent time elapses and `mint` is called by the user
+4. The minter contract returns the staked SDEX to the user and mints the APY NFT to their wallet
   
 ## Proposed Flow Diagram
 <p align="center">
