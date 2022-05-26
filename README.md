@@ -40,7 +40,7 @@ Penalties are an ecosystem balancing mechanism.
 ## Example Scenario
 
 1. User uses react front-end to timelock and deposit SDEX or SDEX LP tokens into minter 
-2. Deposit data is stored on-chain in an [array](https://github.com/Sigmadex/sigfi-nft-minter/edit/main/README.md#proposed-array-format)
+2. Deposit data is stored on-chain in an [array](https://github.com/Sigmadex/sigfi-nft-minter/blob/main/README.md#proposed-array-formats)
 3. `isLiquidity` is set to 0 if SDEX is deposited or 1 if SDEX LP is deposited
 4. As time elapses the daily NFT rate is derived from multiplying the amount of SDEX staked by `sdexAPY` once per day
 5. `mint` is called by the user and the current `timestamp` is > than `endTimestamp` 
