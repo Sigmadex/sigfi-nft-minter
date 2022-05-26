@@ -52,7 +52,7 @@ Penalties are an ecosystem balancing mechanism.
 
 |wallet|staked|minedAPY|startTimestamp|endTimestamp|isLiquidity|
 |-------------|--------|--------------|------|-----|-----------|
-|0x82C879fdBd65aD36f8Fccce3AF6cd5b5E757fD03|50000|0.17|55469846561|83469846588|0|
+|0x82C879fdBd65aD36f8Fccc...|50000|0.17|55469846561|83469846588|0|
   
 </div>
   
