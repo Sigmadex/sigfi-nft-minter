@@ -40,9 +40,18 @@ Penalties are an ecosystem balancing mechanism.
 ## Example Scenario
 
 1. User uses react front-end to timelock and deposit SDEX into minter contract data is stored in an array
-2. As time elapses the daily NFT rate is derived from multiplying the amount of SDEX staked by `sdexAPY`
+2. As time elapses the daily NFT rate is derived from multiplying the amount of SDEX staked by `sdexAPY` once  day
 3. A sufficent time elapses and `mint` is called by the user
 4. The minter contract returns the staked SDEX to the user and mints the APY NFT to their wallet
+  
+### Proposed Array Format
+<div align="center">
+
+|wallet|staked|totalAPY|endTimestamp|
+|-------------|--------|-----------|
+|0x82C879fdBd65aD36f8Fccce3AF6cd5b5E757fD03|50000|0.17|55469846561|
+
+</div>
   
 ## Proposed Flow Diagram
 <p align="center">
