@@ -39,18 +39,21 @@ Penalties are an ecosystem balancing mechanism.
   
 ## Example Scenario
 
-1. User uses react front-end to timelock and deposit SDEX into minter contract data is stored in an array
-2. As time elapses the daily NFT rate is derived from multiplying the amount of SDEX staked by `sdexAPY` once  day
-3. A sufficent time elapses and `mint` is called by the user
-4. The minter contract returns the staked SDEX to the user and mints the APY NFT to their wallet
+1. User uses react front-end to timelock and deposit SDEX or SDEX LP tokens into minter 
+2. Deposit data is stored on-chain in an [array](https://github.com/Sigmadex/sigfi-nft-minter/edit/main/README.md#proposed-array-format)
+3. `isLiquidity` is set to 0 if SDEX is deposited or 1 if SDEX LP is deposited
+4. As time elapses the daily NFT rate is derived from multiplying the amount of SDEX staked by `sdexAPY` once per day
+5. `mint` is called by the user and the current `timestamp` is > than `endTimestamp` 
+6. The minter contract returns the staked SDEX to the user and mints the APY NFT to their wallet
   
-### Proposed Array Format
+### Proposed Array Formats
+
 <div align="center">
 
-|wallet|staked|minedAPY|endTimestamp|
-|-------------|--------|------------|-----|
-|0x82C879fdBd65aD36f8Fccce3AF6cd5b5E757fD03|50000|0.17|55469846561|
-
+|wallet|staked|minedAPY|startTimestamp|endTimestamp|isLiquidity|
+|-------------|--------|--------------|------|-----|-----------|
+|0x82C879fdBd65aD36f8Fccce3AF6cd5b5E757fD03|50000|0.17|55469846561|83469846588|0|
+  
 </div>
   
 ## Proposed Flow Diagram
