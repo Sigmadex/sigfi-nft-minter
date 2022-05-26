@@ -47,7 +47,7 @@ Penalties are an ecosystem balancing mechanism.
 ### Proposed Array Format
 <div align="center">
 
-|wallet|staked|totalAPY|endTimestamp|
+|wallet|staked|minedAPY|endTimestamp|
 |-------------|--------|------------|-----|
 |0x82C879fdBd65aD36f8Fccce3AF6cd5b5E757fD03|50000|0.17|55469846561|
 
