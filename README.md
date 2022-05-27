@@ -67,7 +67,7 @@ Penalties are an ecosystem balancing mechanism.
 |minedAPY|*uint256*|Current NFT value, updated once per day|
 |startTimestamp|*uint256*|Time of when the position was opened|
 |endTimestamp|*uint256*|Time of when the position will mature and `mint` can be called without penalty|
-|isLiquidity|*bool*|Identifies whether the deposit is an LP token or SDEX, 1 = yes 0 = no|
+|isLiquidity|*bool*|Identifies whether the deposit is an LP token or SDEX, 1 = *yes* 0 = *no*|
 
 </div>
     
