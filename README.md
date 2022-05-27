@@ -44,9 +44,9 @@ Penalties are an ecosystem balancing mechanism.
 3. `isLiquidity` is set to 0 if SDEX is deposited or 1 if SDEX LP is deposited
 4. As time elapses the daily NFT rate is derived from multiplying the amount of SDEX staked by `sdexAPY` once per day
 5. `mint` is called by the user and the current `timestamp` is > than `endTimestamp` 
-6. The minter contract returns the staked SDEX to the user and mints the APY NFT to their wallet
+6. The minter contract returns the staked SDEX to the users wallet and mints the APY NFT to their wallet
   
-### Proposed Array Formats
+### Proposed Array Format
 
 <div align="center">
 
@@ -63,11 +63,11 @@ Penalties are an ecosystem balancing mechanism.
 |query|type|desc|
 |-----|----|----|
 |wallet|*address*|Address of wallet which staked tokens|
-|staked|*uint256*|# of tokens which are held in the smart contract for this specific `wallet`|
+|staked|*uint256*|Number of tokens which are held in the smart contract for this specific `wallet`|
 |minedAPY|*uint256*|Current NFT value, updated once per day|
 |startTimestamp|*uint256*|Time of when the position was opened|
-|endTimestamp|*uint256*|Time of when the position will mature|
-|isLiquidity|*bool*|Identifies whether the deposit is an LP token or SDEX|
+|endTimestamp|*uint256*|Time of when the position will mature and `mint` can be called without penalty|
+|isLiquidity|*bool*|Identifies whether the deposit is an LP token or SDEX, 1 = yes 0 = no|
 
 </div>
     
