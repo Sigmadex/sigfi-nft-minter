@@ -73,5 +73,5 @@ Penalties are an ecosystem balancing mechanism.
     
 ## Proposed Flow Diagram
 <p align="center">
-<img src="https://user-images.githubusercontent.com/33762147/170386375-8f26cc01-7c99-414c-b578-af8d90d4b70b.png" style="width:560px;">
+<img src="https://user-images.githubusercontent.com/33762147/170894657-45ae3957-4503-4b67-aa19-6d9acbaa742c.png" style="width:560px;">
 </p>
