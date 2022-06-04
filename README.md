@@ -33,7 +33,7 @@ Penalties are an ecosystem balancing mechanism.
 |penalty|value|var|desc|
 |-------------|--------|----------|-----------|
 |SDEX daily   |50%|`sdexPenalty`  |SDEX burn pool|
-|SDEX LP daily|50%|`sdexlpPenalty`|LP tokens forfeited|
+|SDEX LP daily|50%|`sdexlpPenalty`|LP tokens forfeited into treasury|
   
 </div>
   
