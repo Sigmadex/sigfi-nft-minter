@@ -78,6 +78,4 @@ Penalties are an ecosystem balancing mechanism.
 
 ## Figma
 
-[Design in Progress]
-
-https://www.figma.com/file/c1Hq2fxQD6zAE4Hs5VD5eb/Protocol-Statistics?node-id=0%3A1
+![2022-06-08_15-00-00](https://user-images.githubusercontent.com/33762147/172717009-f366188d-bfdf-4baf-9ccf-31285ce31729.jpg)
