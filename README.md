@@ -4,13 +4,15 @@
 
 ## Summary
 
-This application locks up SDEX or SDEX LP tokens for a user selected period of time, after the timeframe has exceeded the selected period, the user will be allowed to mint an APY NFT with no penalty to their stake. APY NFT values increase daily depending on the amound of SDEX or LP tokens staked.
+This application locks up SDEX or SDEX LP tokens for a user selected period of time, after the timeframe has exceeded the selected period, the user will be allowed to mint an APY NFT with no penalty to their stake. APY NFT values increase daily depending on the amount of SDEX or LP tokens staked.
 
 APY NFTs can be used in conjunction with staking SDEX in other SigmaFi pools to earn rewards relative to their minted NFTs.
 
 **Eg.** John bought 50,000 SDEX from a DEX and staked the entire 50,000 SDEX in the NFT Minter DAPP for 365 days. The DAPP contract credits him 0.000015 per SDEX per day giving him an increase of 0.75% per day for 1 year (365 days). After his contract reaches maturity, he can mint an APY NFT for 273% and obtain all his staked SDEX he put up in order to mint his NFT. After John mints his NFT he has two options to capitalize on the opportunity:
 * He can sell the NFT privately or on a secondary marketplace for an instant profit
-* He can stake SDEX to recieve 273% APY in rewards relative to his capital
+* He can stake SDEX in another DAPP to recieve 273% APY in rewards relative to his capital
+
+If the contract has not reached maturity and `withdraw` is called, a penalty to the principal will be applied based on boostrap variables shown below.
 
 ## Proposed Genesis Parameters
 Variables for both rewards and penalties will be set by the contract deployer only and can be modified by the deployer at anytime.
