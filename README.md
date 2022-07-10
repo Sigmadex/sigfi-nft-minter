@@ -17,7 +17,7 @@ If the contract has not reached maturity and `withdraw` is called, a penalty to 
 ## Proposed Genesis Parameters
 Variables for both rewards and penalties will be set by the contract deployer only and can be modified by the deployer at anytime.
 
-### Reward Variables
+### Initial Reward Variables
 When commitments are respected, rewards are given for loyalty.
 <div align="center">
   
@@ -28,7 +28,7 @@ When commitments are respected, rewards are given for loyalty.
   
 </div>
 
-### Penalty Variables
+### Initial Penalty Variables
 Penalties are an ecosystem balancing mechanism.
 <div align="center">
   
@@ -36,6 +36,18 @@ Penalties are an ecosystem balancing mechanism.
 |-------------|--------|----------|-----------|
 |SDEX daily   |50%|`sdexPenalty`  |SDEX burn pool|
 |SDEX LP daily|50%|`sdexlpPenalty`|LP tokens forfeited into treasury|
+  
+</div>
+
+### Variables
+
+<div align="center">
+  
+|query|type|desc|
+|-------------|--------|-------|
+|`auth`         |*address*|Address of the contract deployer|
+|`sdexPenalty`  |*unit256*|Penalty rate to be set by `auth`|
+|`sdexlpPenalty`|*unit256*|LP tokens forfeited into treasury to be set by `auth`|
   
 </div>
   
